@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+  display: block;
+}
+
+body {
+  font-family: Quintessential, cursive;
+  color: #3F3A2E;
+}
+
+.btn {
+  padding: 3px 10px;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.25);
+  color: #3F3A2E;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 3px 0;
+  border: 1px solid #3F3A2E;
+}
+
+.wrapper {
+  width: 900px;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+}
