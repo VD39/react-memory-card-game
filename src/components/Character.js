@@ -29,20 +29,21 @@ class Character extends Component {
    * Render the Character component.
    */
   render() {
-    const characterCN = classNames('character', {
-      matched: this.props.matched
-    }); // Character class names
-    const anchorCN = classNames({
+    const selected = classNames({
+      matched: this.props.matched,
       selected: this.props.selected
-    }); // Anchor class names
+    }); // Character class names
     return (
-      <div className={characterCN}>
-        <a className={anchorCN} onClick={this.characterClick} role="button" tabIndex={-1}>
-          <div>
+      <div className={`flip effect__hover ${selected}`} onClick={this.characterClick} role="button" tabIndex={-1}>
+        <div className="flip__back">
+          <div className={`character ${selected}`}>
             <img className="image" src={CHARACTERS_IMAGES[this.props.character.replace(/ /g, '-').toLowerCase()]} alt="" />
             <p className="character-name">{this.props.character}</p>
           </div>
-        </a>
+        </div>
+        <div className="flip__front">
+          <div className="character" />
+        </div>
       </div>
     );
   }
