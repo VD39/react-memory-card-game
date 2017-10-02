@@ -1,15 +1,18 @@
-import React, { Component } from 'react';
-import './App.css';
+// Import dependencies
+import React from 'react';
 
-import characters from './characters';
-import Start from './components/Start'
+// Import componets
+import Start from './components/Start';
 
-class App extends Component {
-  render() {
-    return (
-      <Start characters={characters}/>
-    );
-  }
-}
+// Import characters object
+import CHARACTERS from './characters';
 
+/**
+ * Renders the App component.
+ */
+const App = () => (
+  <Start characters={CHARACTERS} />
+);
+
+// Export
 export default App;
