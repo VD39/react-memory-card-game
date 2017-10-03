@@ -1,4 +1,4 @@
-const characters = [
+const CHARACTERS = [
   'Bazaar Owner',
   'Bean Seller',
   'Beggar',
@@ -66,4 +66,4 @@ const characters = [
   'Wounded Soldier'
 ];
 
-export default characters;
+export default CHARACTERS;

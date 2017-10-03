@@ -1,8 +1,19 @@
+// Import dependencies
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+// Import components
+import App from './App';
+
+// Import CSS
+import './styles/main.scss';
+
+// Root element
+const root = document.getElementById('root');
+
+// Render react app
+ReactDOM.render(
+  <App />,
+  root
+);
+
